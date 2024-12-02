@@ -1,7 +1,7 @@
 from book_model import ContactBook
 from contact_model import Contact
 
-if __name__ == '__main__':
+def main():
     contact_book = ContactBook()
     contact1 = Contact("John Doe", "123-456-7890", "john@example.com")
     contact2 = Contact("Jane Smith", "098-765-4321", "jane@example.com")
@@ -12,3 +12,6 @@ if __name__ == '__main__':
     contact_book.search_contact("John Doe")
     contact_book.delete_contact("Jane Smith")
     contact_book.list_contacts()
+
+if __name__ == '__main__':
+    main()
