@@ -11,10 +11,10 @@ class Student:
         return sum(self.grades.values()) / len(self.grades)
     
     def display_card(self):
-        print(f"Name: {self.name} ID Number: {self.id_number}")
+        print(f"Name: {self.name} - ID Number: {self.id_number}")
         for subject, grade in self.grades.items():
             print(f"{subject} : {grade}")
-        print(f"Average: {self.get_average()}")
+        print(f"Average: {self.get_average():.2f}")
 
     def grade_range(self):
         average = self.get_average()
